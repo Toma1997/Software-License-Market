@@ -1,0 +1,267 @@
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	font-family: 'Calibri Light';
+}
+
+a {
+	text-decoration: none;
+}
+
+.wrapper {
+	background-color: #fff;
+}
+
+.wrapper > header {
+	background-color: rgb(20, 30, 234);
+	text-align: center;
+
+	}
+
+.wrapper > header > h1 {
+	padding: 40px 0px 15px 0px;
+	font-size: 40px;
+	color: #fff;
+}
+
+#main {
+	padding: 30px 0px;
+	margin: 0px auto;
+	width: 1600px;
+}
+
+#main > header > nav#top-menu {
+	display: inline-block;
+	vertical-align: top;
+	width: 80%;
+	margin-left: 350px;
+}
+
+#main > header > nav#top-menu > ul {
+	list-style: none;
+}
+				
+#main > header > nav#top-menu > ul > li {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+#main > header > nav#top-menu > ul > li > a {
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 5px 15px;
+	color: rgb(20, 30, 234);
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#main > header > nav#top-menu > ul > li.active > a {
+	background-color: #234;
+	border-radius: 5px;
+	color: white;
+}
+
+#main > header > nav#top-menu > ul > li:hover > a {
+	background-color: #cdf;
+	border-radius: 5px;
+	color: black;
+}
+
+.articles{
+	width: 1600px;
+	margin: 50px 10px;
+
+}
+
+.articles .posts {
+	width: calc(33.333% - 30px);
+	margin: 0px 14px 25px 13px;
+	display: inline-block;
+	vertical-align: top;
+}
+	
+.articles .posts > header {
+	border-bottom: 1px solid rgba(100, 100, 100, 0.2);
+	margin-bottom: 20px;
+	padding: 20px 0px;
+	text-align: left;
+}
+
+.articles .posts > header > h2 {
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 2px;
+	font-size: 16pt;
+	color: rgb(20, 30, 234);
+}
+	
+.articles .posts p {
+	margin-bottom: 10px;
+	text-align: left;
+	font-size: 12pt;
+	color: rgb(20, 30, 234);
+}
+				
+.articles .posts > .widget-main {
+	min-height: 70px;
+}				
+
+.articles .posts p > .widget-button {
+	background-color: yellow;
+	display: inline-block;
+	border-radius: 5px;
+	padding: 10px 20px;
+	color: rgb(20, 30, 234);
+}
+
+.wrapper > footer {
+	background-color: rgb(20, 30, 234);
+	text-align: center;
+	padding: 30px 0px;
+	font-size: 20px;
+	color: #fff;
+}
+
+.icon {
+	background-repeat: no-repeat;
+	background-position: center;
+	display: inline-block;
+	height: 46px;
+	width: 80px;
+}
+
+.icon-anaconda { 
+	background-image: url('../img/products/anaconda.png'); 
+	background-size: 80%;
+	margin:0;
+	padding:0;
+}
+
+.icon-eclipse { 
+	background-image: url('../img/products/eclipse.jpg'); 
+	background-size: 60%;
+	margin:0;
+	padding:0;
+}
+
+.icon-fritzing { 
+	background-image: url('../img/products/fritzing.png');
+	background-size: 50%;
+	margin:0;
+	padding:0; 
+}
+
+.icon-matlab { 
+	background-image: url('../img/products/matlab.jpg');
+	background-size: 75%;
+	margin:0;
+	padding:0; 
+}
+
+.icon-navicat { 
+	background-image: url('../img/products/navicat-premium.jpg');
+	background-size: 55%;
+	margin:0;
+	padding:0; 
+}
+
+.icon-netbeans { 
+	background-image: url('../img/products/netbeans-ide.png');
+	background-size: 120%;
+	margin:0;
+	padding:0; 
+}
+
+.icon-notepad { 
+	background-image: url('../img/products/notepad++.jpg');
+	background-size: 70%;
+	margin:0;
+	padding:0; 
+}
+
+.icon-php { 
+	background-image: url('../img/products/phpstorm.jpg');
+	background-size: 90%;
+	margin:0;
+	padding:0; 
+}
+
+.icon-python { 
+	background-image: url('../img/products/python-idle.jpg');
+	background-size: 60%;
+	margin:0;
+	padding:0; 
+}
+
+.icon-ibm { 
+	background-image: url('../img/products/rsa.jpg');
+	background-size: 67%;
+	margin:0;
+	padding:0; 
+}
+
+.icon-vm { 
+	background-image: url('../img/products/Virtualbox_logo.png');
+	background-size: 67%;
+	margin:0;
+	padding:0; 
+}
+
+.icon-vs { 
+	background-image: url('../img/products/visual-studio.png');
+	background-size: 67%;
+	margin:0;
+	padding:0; 
+}
+
+#form {
+	width:900px;
+	height:900px;
+	margin: 50px auto;
+	padding: 30px;
+	background-color: rgb(20, 30, 234);
+	color: yellow;
+	border-radius: 20px;
+}
+
+#form h1{
+	text-align: center;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+#form #buying{
+	font-size: 20px;
+}
+#form #buying input{
+	margin:15px;
+	padding: 5px;
+}
+
+#send{
+	background-color: yellow;
+	border-radius: 5px;
+	padding: 10px 20px;
+	width:100px;
+	height: 50px;
+	color: rgb(20, 30, 234);
+	float:left;
+}
+
+ #reset{
+	background-color: yellow;
+	border-radius: 5px;
+	padding: 10px 20px;
+	color: rgb(20, 30, 234);
+	width:100px;
+	height: 50px;
+	float: right;
+}
+
+.float-left {
+	float: left;
+}

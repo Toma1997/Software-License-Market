@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="language" content="english"/>
+		<script type="text/javascript" src="assets/javascript/signup.js"></script>
+		<link rel="stylesheet" href="assets/css/signup.css">
+		<title>Software License Market</title>
+	</head>
+	<body onload="crvenaBoja();cookie()">
+		<section class="wrapper">
+			<header>
+				<h1>Software License Market</h1>
+			</header>
+
+			<div id="main">
+				<header>
+					<nav id="top-menu">
+						<ul>
+							<li><a href="index.html">Home</a>
+							<li><a href="aboutus.html">About us</a>
+							<li><a href="products.html">Products</a>
+							<li  class="active"><a href="signup.html">Sign up</a>
+						</ul>
+					</nav>
+				</header>
+
+				<div id="form">
+					<h1 id="naslov">Fill in the Registration</h1>
+					<form id="signup" name="signup">
+
+							<p id="Inicijalni"></p>
+
+    						<span id='name'>Full Name: </span> 
+    						<input type="text" id="fullname" name="fullname" placeholder="Marko Pajic" onblur="provera()" size="40"/>
+							<br/>
+    						
+    						<span id='addr'>Address: </span>
+    						<input type="text" id="address" name="address" onblur="provera()" placeholder="Kraljice Natalije 15" size="40"/>
+							<br/>
+
+							<span id='cityy'>City: </span>
+							<input type="text" id="city" name="city" onblur="provera()" placeholder="Beograd" />
+							<br/>
+							    
+
+							<span>Birth date: </span>
+							<input type="date" name="date" id="date" max="31.12.1999" min="1.1.1950"/>
+							<br/>
+
+							<span>Your Salary (EUR): </span>
+							<input type="number" min="0" max="1000000000000" name="salary" placeholder="15400"/>
+							<br/>
+							    
+							<span id='State'>State: </span>
+							<select id="state" name="state" onchange="provera()">
+										<option value="0">Please Select</option>
+										<option value="usa">USA</option>
+										<option value="uk">United Kingdom</option>
+										<option value="france">France</option>
+										<option value="serbia">Serbia</option>
+										<option value="hungary">Hungary</option>
+										<option value="egypt">Egypt</option>
+										<option value="china">China</option>
+										<option value="russia">Russia</option>
+										<option value="italy">Italy</option>
+										<option value="spain">Spain</option>
+									</select>
+							<br/><br/>
+
+							<span id="tPhone">Mobile Phone: </span>
+							<input type="text" id="phone" name="phone" onblur="provera()" placeholder="+38164335794"/>
+							<br/>
+
+							<span id="Email">Email: </span>
+							<input type="text" id="email" name="email" onkeyup="provera()" placeholder="marko.pajic@gmail.com" size="50" required="true"/>
+							<br/>
+
+							<span id="confEmail">Confirm Email: </span>
+							<input type="text" id="confemail" name="confemail" onkeyup ="provera();" placeholder="marko.pajic@gmail.com" size="50" required="true"/>
+							<br/><br/>
+							
+							<input type="Submit" id="submit" name="submit" onclick="submitData()"/> 
+							<input type="reset" name="reset" id="reset" value="Reset all"/>
+					</form>
+
+				</div>
+				
+			</div>
+
+			<footer>
+				Copyright &copy; All rights reserved. Student: Toma Joksimovic
+			</footer>
+		</section>
+	</body>
+</html>
